@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark" data-theme-mode="system" data-motion="on">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070b0a" />
+    <meta name="description" content="HongyunX Agent 项目功能、命令、架构与部署指南" />
+    <link rel="icon" type="image/svg+xml" href="./branding/hongyunx-mark.svg" />
+    <title>HongyunX Agent // Project Atlas</title>
+    <script>
+      (() => {
+        try {
+          const root = document.documentElement;
+          const storedTheme = localStorage.getItem("hongyunx.atlas.theme");
+          const mode = ["light", "dark", "system"].includes(storedTheme) ? storedTheme : "system";
+          const theme = mode === "system" ? (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : mode;
+          const storedLanguage = localStorage.getItem("hongyunx.atlas.language");
+          const language = ["zh-CN", "en"].includes(storedLanguage) ? storedLanguage : (navigator.language.toLowerCase().startsWith("zh") ? "zh-CN" : "en");
+          const storedMotion = localStorage.getItem("hongyunx.atlas.motion");
+          const motion = storedMotion === "on" || storedMotion === "off" ? storedMotion : (matchMedia("(prefers-reduced-motion: reduce)").matches ? "off" : "on");
+          root.dataset.theme = theme;
+          root.dataset.themeMode = mode;
+          root.dataset.motion = motion;
+          root.dataset.language = language;
+          root.lang = language;
+          document.querySelector('meta[name="theme-color"]').setAttribute("content", theme === "dark" ? "#070b0a" : "#f4f8f7");
+        } catch {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/HongyunX-Agent-Web-Deploy/assets/index-B9WCC746.js"></script>
+    <link rel="modulepreload" crossorigin href="/HongyunX-Agent-Web-Deploy/assets/rolldown-runtime-CNC7AqOf.js">
+    <link rel="modulepreload" crossorigin href="/HongyunX-Agent-Web-Deploy/assets/vendor-three-ZzR3ONn8.js">
+    <link rel="modulepreload" crossorigin href="/HongyunX-Agent-Web-Deploy/assets/preload-helper-Dcbw7PCy.js">
+    <link rel="modulepreload" crossorigin href="/HongyunX-Agent-Web-Deploy/assets/chunk-KS7C4IRE-DmoZotr5.js">
+    <link rel="modulepreload" crossorigin href="/HongyunX-Agent-Web-Deploy/assets/useTranslation-BmN9Fxux.js">
+    <link rel="modulepreload" crossorigin href="/HongyunX-Agent-Web-Deploy/assets/braces-OvpGsHS1.js">
+    <link rel="modulepreload" crossorigin href="/HongyunX-Agent-Web-Deploy/assets/usePreferences-NikSbTyw.js">
+    <link rel="modulepreload" crossorigin href="/HongyunX-Agent-Web-Deploy/assets/SettingsControls-DQWBnZE8.js">
+    <link rel="modulepreload" crossorigin href="/HongyunX-Agent-Web-Deploy/assets/check-CNm8ng7T.js">
+    <link rel="modulepreload" crossorigin href="/HongyunX-Agent-Web-Deploy/assets/square-terminal-AcdVEpXG.js">
+    <link rel="modulepreload" crossorigin href="/HongyunX-Agent-Web-Deploy/assets/sparkles-IlRK9-kh.js">
+    <link rel="modulepreload" crossorigin href="/HongyunX-Agent-Web-Deploy/assets/shield-check-BBnYdWvz.js">
+    <link rel="modulepreload" crossorigin href="/HongyunX-Agent-Web-Deploy/assets/search-BmCghSh_.js">
+    <link rel="modulepreload" crossorigin href="/HongyunX-Agent-Web-Deploy/assets/x-ChE-am44.js">
+    <link rel="modulepreload" crossorigin href="/HongyunX-Agent-Web-Deploy/assets/PageHeader-BLelOTCd.js">
+    <link rel="modulepreload" crossorigin href="/HongyunX-Agent-Web-Deploy/assets/project-D_5wPD2S.js">
+    <link rel="stylesheet" crossorigin href="/HongyunX-Agent-Web-Deploy/assets/index-UcVV6zcS.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
