@@ -1,2 +1,0 @@
-var e;(function(e){e.clockwise=`clockwise`,e.counterClockwise=`counter-clockwise`,e.random=`random`})(e||={});export{e as t};
-//# sourceMappingURL=RotateDirection-D98JyAXx.js.map

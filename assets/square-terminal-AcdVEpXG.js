@@ -1,2 +1,0 @@
-import{i as e}from"./useTranslation-BmN9Fxux.js";var t=e(`loader-circle`,[[`path`,{d:`M21 12a9 9 0 1 1-6.219-8.56`,key:`13zald`}]]),n=e(`square-terminal`,[[`path`,{d:`m7 11 2-2-2-2`,key:`1lz0vl`}],[`path`,{d:`M11 13h4`,key:`1p7l4v`}],[`rect`,{width:`18`,height:`18`,x:`3`,y:`3`,rx:`2`,ry:`2`,key:`1m3agn`}]]);export{t as n,n as t};
-//# sourceMappingURL=square-terminal-AcdVEpXG.js.map
