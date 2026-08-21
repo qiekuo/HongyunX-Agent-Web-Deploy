@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://qiekuo.github.io/HongyunX-Agent-Web-Deploy/sitemap.xml
